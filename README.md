@@ -1,54 +1,38 @@
-#chronos-logger
-Description of this hapi plugin
+# chronos-logger
 
-## Download
+A logging shim for Chronos to work with any and all compatible loggers.
 
-#### How to install this Plugin
-```Text
-npm install --save chronos-logger
+## Features
+
+Chronos-logger exposes a simple logging interface through functions or can listen to any EventEmitter and automatically handle passing on those functions. It can be fed any standard logging library or instance that exposes methods, and it itself is an EventEmitter which can be observed.
+
+## Methods
+
+To get an instance of the logger, you simply require the function and call it, optionally passing it a logging instance to make use of:
+
+```
+const ChronosLogger = require('chronos-logger');
+const logger = ChronosLogger(myLoggingInstance);
 ```
 
-## Usage
-```Javascript
-//Some sort of quick example on how to initialize and use the module
-```
+If you require the logger multiple times, it'll return the same instance allowing you to preconfigure it ahead of time without having to pass it along.
 
-## Available Entry-points
+The instance itself exposes the following functions:
 
++ `error`
++ `warn`
++ `info`
++ `debug`
++ `trace`
 
-# Development Usage
+and the following events:
 
-## Install Dependencies
-Install the dependencies for this project and create shrinkwrap.
-```Text
-make clean
-```
++ `errorEvent`,
++ `warnEvent`,
++ `infoEvent`,
++ `debugEvent`,
++ `traceEvent`
 
-Install the dependencies based on package.json or shrinkwrap.
-```Text
-make install
-```
+All logging functions take any number of parameters and will pass on all parameters.
 
-## Test Project
-Run tests inside your container (This should be uses)
-```Text
-make run
-```
-
-Run mocha test locally.
-```Text
-make test
-```
-
-Both methods create ca coverage report after executing
-
-## Debug Project
-Run tests in debug mode.  Allows interactive debug from Webstorm.
-```Text
-make debug-test
-```
-
-Run tests in debug mode inside of Docker.  Allows interactive debug from Webstorm with container port 5858 opened.
- ```Text
- make run-debug test
- ```
+Additionally, if you'd like chronos-logger to observe an Event emitter for events and transport them back to your logging instance, you can use the `observe(EventEmitter)` function.

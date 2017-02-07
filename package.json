@@ -1,0 +1,29 @@
+{
+  "name": "chronos-logger",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Plugin",
+  "homepage": "https://git.xogrp.com/LocalPartners/chronos-logger#readme",
+  "main": "src/implementation.js",
+  "bugs": {
+    "url": "https://git.xogrp.com/LocalPartners/chronos-logger/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.xogrp.com/LocalPartners/chronos-logger.git"
+  },
+  "keywords": [
+    "plugin",
+    "chronos-logger"
+  ],
+  "author": "XO Group Team",
+  "license": "ISC",
+  "devDependencies": {
+    "code": "^4.0.0",
+    "eslint": "^3.10.2",
+    "eslint-plugin-xogroup": "^1.x.x",
+    "lab": "^12.1.0"
+  },
+  "peerDependencies": {},
+  "dependencies": {}
+}

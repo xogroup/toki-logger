@@ -1,0 +1,18 @@
+pluginDev:
+  image: xolocalvendors/chronos-logger
+  command: -t
+  volumes:
+    - ../src:/opt/app/current/src
+    - ../test:/opt/app/current/test
+    - ../coverage:/opt/app/current/coverage
+pluginDebug:
+  image: xolocalvendors/chronos-logger
+  command: -dt
+  ports:
+    - "5858:5858"
+  volumes:
+    - ../src:/opt/app/current/src
+    - ../test:/opt/app/current/test
+pluginJenkins:
+  image: xolocalvendors/chronos-logger
+  command: -j

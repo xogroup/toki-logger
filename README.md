@@ -27,10 +27,10 @@ The instance itself exposes the following functions:
 
 and the following events:
 
-+ `errorEvent`,
-+ `warnEvent`,
-+ `infoEvent`,
-+ `debugEvent`,
++ `errorEvent`
++ `warnEvent`
++ `infoEvent`
++ `debugEvent`
 + `traceEvent`
 
 All logging functions take any number of parameters and will pass on all parameters.

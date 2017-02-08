@@ -1,23 +1,23 @@
 {
-  "name": "chronos-logger",
-  "version": "1.0.0",
+  "name": "toki-logger",
+  "version": "0.0.1",
   "private": false,
   "description": "Plugin",
-  "homepage": "https://git.xogrp.com/LocalPartners/chronos-logger#readme",
+  "homepage": "https://github.com/xogroup/toki-logger#readme",
   "main": "src/implementation.js",
   "bugs": {
-    "url": "https://git.xogrp.com/LocalPartners/chronos-logger/issues"
+    "url": "https://github.com/xogroup/toki-logger/issues"
   },
   "scripts": {
     "test": "node_modules/.bin/lab -c test/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://git.xogrp.com/LocalPartners/chronos-logger.git"
+    "url": "git+https://github.com/xogroup/toki-logger.git"
   },
   "keywords": [
     "plugin",
-    "chronos-logger"
+    "toki-logger"
   ],
   "author": "XO Group Team",
   "license": "ISC",

@@ -1,6 +1,6 @@
 {
   "name": "chronos-logger",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": false,
   "description": "Plugin",
   "homepage": "https://git.xogrp.com/LocalPartners/chronos-logger#readme",
@@ -9,7 +9,7 @@
     "url": "https://git.xogrp.com/LocalPartners/chronos-logger/issues"
   },
   "scripts": {
-    "test": "node_modules/.bin/lab -c test/"  
+    "test": "node_modules/.bin/lab -c test/"
   },
   "repository": {
     "type": "git",

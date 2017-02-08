@@ -9,7 +9,7 @@ Lead Maintainer: [Derrick Hinkle](https://github.com/dhinklexo)
 <!-- Badges Go Here -->
 [![Build Status](https://travis-ci.org/xogroup/toki-logger.svg?branch=master)](https://travis-ci.org/xogroup/toki-logger)
 [![Known Vulnerabilities](https://snyk.io/test/github/xogroup/toki-logger/badge.svg)](https://snyk.io/test/github/xogroup/toki-logger)
-[![NSP Status](https://nodesecurity.io/orgs/xo-group/projects/4f17f141-56c4-4cb9-80a4-665c514d73cc/badge)](https://nodesecurity.io/orgs/xo-group/projects/4f17f141-56c4-4cb9-80a4-665c514d73cc)
+[![NSP Status](https://nodesecurity.io/orgs/xo-group/projects/9bb6d883-8850-4bcc-bbff-d602e647163c/badge)](https://nodesecurity.io/orgs/xo-group/projects/9bb6d883-8850-4bcc-bbff-d602e647163c)
 <!-- End Badges -->
 <!-- Quick Example -->
 ## Example

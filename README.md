@@ -1,38 +1,23 @@
-# chronos-logger
+# Toki-Logger <!-- Repo Name -->
+> A logging shim for Toki to work with any and all compatible loggers. <!-- Repo Brief Description -->
 
-A logging shim for Chronos to work with any and all compatible loggers.
+Toki-logger exposes a simple logging interface through functions or can listen to any EventEmitter and automatically handle passing on those functions. It can be fed any standard logging library or instance that exposes methods, and it itself is an EventEmitter which can be observed.
 
-## Features
+<!-- Maintainer (Hint, probably you) -->
+Lead Maintainer: [Derrick Hinkle](https://github.com/dhinklexo)
 
-Chronos-logger exposes a simple logging interface through functions or can listen to any EventEmitter and automatically handle passing on those functions. It can be fed any standard logging library or instance that exposes methods, and it itself is an EventEmitter which can be observed.
-
-## Methods
-
-To get an instance of the logger, you simply require the function and call it, optionally passing it a logging instance to make use of:
-
+<!-- Badges Go Here -->
+[![Build Status](https://travis-ci.org/xogroup/toki-logger.svg?branch=master)](https://travis-ci.org/xogroup/toki-logger)
+[![Known Vulnerabilities](https://snyk.io/test/github/xogroup/toki-logger/badge.svg)](https://snyk.io/test/github/xogroup/toki-logger)
+[![NSP Status](https://nodesecurity.io/orgs/xo-group/projects/4f17f141-56c4-4cb9-80a4-665c514d73cc/badge)](https://nodesecurity.io/orgs/xo-group/projects/4f17f141-56c4-4cb9-80a4-665c514d73cc)
+<!-- End Badges -->
+<!-- Quick Example -->
+## Example
+```javascript
+const TokiLogger = require('toki-logger');
+const logger = TokiLogger(myLoggingInstance);
 ```
-const ChronosLogger = require('chronos-logger');
-const logger = ChronosLogger(myLoggingInstance);
-```
 
-If you require the logger multiple times, it'll return the same instance allowing you to preconfigure it ahead of time without having to pass it along.
+More examples can be found in [the examples document](Example.md) and the full api in the [API documentation](API.md).
 
-The instance itself exposes the following functions:
-
-+ `error`
-+ `warn`
-+ `info`
-+ `debug`
-+ `trace`
-
-and the following events:
-
-+ `errorEvent`
-+ `warnEvent`
-+ `infoEvent`
-+ `debugEvent`
-+ `traceEvent`
-
-All logging functions take any number of parameters and will pass on all parameters.
-
-Additionally, if you'd like chronos-logger to observe an Event emitter for events and transport them back to your logging instance, you can use the `observe(EventEmitter)` function.
+<!-- Anything Else (Sponsors, Links, Etc) -->

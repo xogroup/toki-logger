@@ -8,6 +8,9 @@
   "bugs": {
     "url": "https://git.xogrp.com/LocalPartners/chronos-logger/issues"
   },
+  "scripts": {
+    "test": "node_modules/.bin/lab -c test/"  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://git.xogrp.com/LocalPartners/chronos-logger.git"

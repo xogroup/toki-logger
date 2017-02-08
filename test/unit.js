@@ -5,9 +5,10 @@ const Lab = require('lab');
 const lab = exports.lab = Lab.script();
 
 const EventEmitter = require('events');
-const Logger = require('./../src/instance.js');
-const implementation = require('./../src/implementation.js');
-const errors = require('../src/errors');
+
+const Logger = require('./../lib/instance.js');
+const implementation = require('./../lib/implementation.js');
+const errors = require('../lib/errors');
 
 lab.experiment('logger instance', ()=>{
     lab.test('It should be instantiated', (done)=>{

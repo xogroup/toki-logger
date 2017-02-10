@@ -15,7 +15,7 @@ Lead Maintainer: [Derrick Hinkle](https://github.com/dhinklexo)
 <!-- Quick Example -->
 ## Example
 ```javascript
-const TokiLogger = require('toki-logger');
+const TokiLogger = require('@toki/toki-logger');
 const logger = TokiLogger(myLoggingInstance);
 ```
 

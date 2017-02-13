@@ -1,4 +1,3 @@
 {
-	"plugins" : ["xogroup"],
-	"extends" : ["plugin:xogroup/hapijs"]
+    "extends": "eslint-config-hapi"
 }

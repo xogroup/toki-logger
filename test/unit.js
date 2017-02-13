@@ -9,7 +9,7 @@ const describe = lab.describe;
 const EventEmitter = require('events');
 
 const Logger = require('./../lib/instance.js');
-const Implementation = require('./../lib/Implementation.js');
+const Implementation = require('./../lib/implementation.js');
 const Errors = require('../lib/errors');
 
 describe('logger instance', () => {

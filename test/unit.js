@@ -31,35 +31,35 @@ describe('logger instance', () => {
     it('It should emit error', (done) => {
 
         const myLogger = new Logger();
-        myLogger.on('errorEvent', done);
+        myLogger.on('log.error', done);
         myLogger.error();
     });
 
     it('It should emit warn', (done) => {
 
         const myLogger = new Logger();
-        myLogger.on('warnEvent', done);
+        myLogger.on('log.warn', done);
         myLogger.warn();
     });
 
     it('It should emit info', (done) => {
 
         const myLogger = new Logger();
-        myLogger.on('infoEvent', done);
+        myLogger.on('log.info', done);
         myLogger.info();
     });
 
     it('It should emit debug', (done) => {
 
         const myLogger = new Logger();
-        myLogger.on('debugEvent', done);
+        myLogger.on('log.debug', done);
         myLogger.debug();
     });
 
     it('It should emit trace', (done) => {
 
         const myLogger = new Logger();
-        myLogger.on('traceEvent', done);
+        myLogger.on('log.trace', done);
         myLogger.trace();
     });
 

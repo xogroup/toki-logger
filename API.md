@@ -50,8 +50,8 @@ Those events will be treated the same as if the matching method was called direc
 
 Toki logger will emit the following events when it's log methods are called:
 
-+ `errorEvent`
-+ `warnEvent`
-+ `infoEvent`
-+ `debugEvent`
-+ `traceEvent`
++ `log.error`
++ `log.warn`
++ `log.info`
++ `log.debug`
++ `log.trace`

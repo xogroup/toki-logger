@@ -4,27 +4,25 @@
   "private": false,
   "description": "Plugin",
   "homepage": "https://github.com/xogroup/toki-logger#readme",
-  "main": "src/implementation.js",
+  "main": "lib/implementation.js",
   "bugs": {
     "url": "https://github.com/xogroup/toki-logger/issues"
   },
   "scripts": {
-    "test": "node_modules/.bin/lab -c test/"
+    "test": "lab test -c -v"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xogroup/toki-logger.git"
   },
   "keywords": [
-    "plugin",
-    "toki-logger"
+    "toki",
+    "logger"
   ],
   "author": "XO Group Team",
   "license": "ISC",
   "devDependencies": {
     "code": "^4.0.0",
-    "eslint": "^3.10.2",
-    "eslint-plugin-xogroup": "^1.x.x",
     "lab": "^12.1.0"
   },
   "peerDependencies": {},

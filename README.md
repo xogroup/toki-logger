@@ -7,6 +7,7 @@ Toki-logger exposes a simple logging interface through functions or can listen t
 Lead Maintainer: [Derrick Hinkle](https://github.com/dhinklexo)
 
 <!-- Badges Go Here -->
+[![npm version](https://badge.fury.io/js/%40toki%2Ftoki-logger.svg)](https://badge.fury.io/js/%40toki%2Ftoki-logger)
 [![Build Status](https://travis-ci.org/xogroup/toki-logger.svg?branch=master)](https://travis-ci.org/xogroup/toki-logger)
 [![Known Vulnerabilities](https://snyk.io/test/github/xogroup/toki-logger/badge.svg)](https://snyk.io/test/github/xogroup/toki-logger)
 [![NSP Status](https://nodesecurity.io/orgs/xo-group/projects/9bb6d883-8850-4bcc-bbff-d602e647163c/badge)](https://nodesecurity.io/orgs/xo-group/projects/9bb6d883-8850-4bcc-bbff-d602e647163c)
@@ -14,7 +15,7 @@ Lead Maintainer: [Derrick Hinkle](https://github.com/dhinklexo)
 <!-- Quick Example -->
 ## Example
 ```javascript
-const TokiLogger = require('toki-logger');
+const TokiLogger = require('@toki/toki-logger');
 const logger = TokiLogger(myLoggingInstance);
 ```
 
